@@ -4,4 +4,23 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="views\" />
+    <Folder Include="views\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\index.html" />
+    <Content Remove="package-lock.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="OdeToCode.UseNodeModules" Version="3.0.0" />
+  </ItemGroup>
 </Project>
