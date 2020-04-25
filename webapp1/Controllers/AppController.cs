@@ -14,10 +14,12 @@ namespace webapp1.Controllers
             return View();
         }
 
-        [HttpGet("Contact")]
+        [HttpGet("contact")]
         public IActionResult Contact()
         {
             ViewBag.Title = "Contact Us";
+
+            throw new InvalidOperationException("This is an error!");
 
             return View();
         }

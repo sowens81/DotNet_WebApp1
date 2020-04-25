@@ -28,7 +28,7 @@ namespace webapp1
             }
             else
             {
-                // Add Error Page
+                app.UseExceptionHandler("/error");
             }
             
 
